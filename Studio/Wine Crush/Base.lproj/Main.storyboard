@@ -58,29 +58,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wine Crush" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-LY-Wjv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="446" placeholderIntrinsicHeight="36" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-lh-QwG">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="446" placeholderIntrinsicHeight="36" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-lh-QwG">
                                 <rect key="frame" x="40" y="432" width="520" height="36"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Play Wine Crush" backgroundImage="Button">
+                                <state key="normal" title="Play Party Crush" backgroundImage="Button">
+                                    <color key="titleColor" red="0.31732855900000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="playGameButtonPressed:" destination="hOo-Cc-4in" eventType="touchUpInside" id="48z-4D-1L5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-aU-RkN">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-aU-RkN">
                                 <rect key="frame" x="40" y="487" width="520" height="36"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="About Wine Crush" backgroundImage="Button">
+                                <state key="normal" title="About Party Crush" backgroundImage="Button">
+                                    <color key="titleColor" red="0.31732855900000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="aboutButtonPressed:" destination="hOo-Cc-4in" eventType="touchUpInside" id="0MD-CD-DlY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" placeholderIntrinsicWidth="537" placeholderIntrinsicHeight="36" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7E-FP-SfT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" placeholderIntrinsicWidth="537" placeholderIntrinsicHeight="36" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7E-FP-SfT">
                                 <rect key="frame" x="40" y="538" width="520" height="36"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -149,11 +151,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBp-ff-jVG">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBp-ff-jVG">
                                 <rect key="frame" x="0.0" y="30" width="600" height="494"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5A-qR-BAM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5A-qR-BAM">
                                 <rect key="frame" x="20" y="544" width="560" height="36"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -310,11 +312,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93J-bO-2Fy">
                                 <rect key="frame" x="147" y="217" width="320" height="150"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-lo-3lp">
-                                <rect key="frame" x="150" y="554" width="300" height="36"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-lo-3lp">
+                                <rect key="frame" x="150" y="554" width="744" height="116"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-2c-C1w">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-2c-C1w">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="116"/>
                                         <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -325,8 +327,8 @@
                                             <action selector="shuffleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPX-mE-7sG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-3F-G88" userLabel="Hint Button">
-                                        <rect key="frame" x="100" y="0.0" width="100" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-3F-G88" userLabel="Hint Button">
+                                        <rect key="frame" x="248" y="0.0" width="248" height="116"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="Hint" backgroundImage="Button">
@@ -336,8 +338,8 @@
                                             <action selector="hintButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGI-Du-Nqy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-dm-Wuh" userLabel="Hint Button">
-                                        <rect key="frame" x="200" y="0.0" width="100" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-dm-Wuh" userLabel="Hint Button">
+                                        <rect key="frame" x="496" y="0.0" width="248" height="116"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="Quit" backgroundImage="Button">
@@ -428,7 +430,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Button" width="100" height="36"/>
-        <image name="Wine Crush" width="375" height="567"/>
+        <image name="Button" width="248" height="116"/>
+        <image name="Wine Crush" width="160" height="160"/>
     </resources>
 </document>
