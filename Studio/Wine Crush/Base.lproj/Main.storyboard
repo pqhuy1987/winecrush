@@ -312,45 +312,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93J-bO-2Fy">
                                 <rect key="frame" x="147" y="217" width="320" height="150"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-lo-3lp">
-                                <rect key="frame" x="150" y="554" width="744" height="116"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-2c-C1w">
-                                        <rect key="frame" x="0.0" y="0.0" width="248" height="116"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                        <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="Shuffle" backgroundImage="Button">
-                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="shuffleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPX-mE-7sG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-3F-G88" userLabel="Hint Button">
-                                        <rect key="frame" x="248" y="0.0" width="248" height="116"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                        <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="Hint" backgroundImage="Button">
-                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="hintButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGI-Du-Nqy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-dm-Wuh" userLabel="Hint Button">
-                                        <rect key="frame" x="496" y="0.0" width="248" height="116"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                        <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="Quit" backgroundImage="Button">
-                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="quitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ra-to-Zna"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-VV-OEA">
                                 <rect key="frame" x="20" y="159" width="560" height="125"/>
                                 <subviews>
@@ -384,21 +345,83 @@
                                     <constraint firstItem="IcF-ra-xmJ" firstAttribute="top" secondItem="aeE-z9-15K" secondAttribute="bottom" constant="10" id="tGY-t6-hny"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-hK-2s8">
+                                <rect key="frame" x="0.0" y="472" width="600" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-3F-G88" userLabel="Hint Button">
+                                        <rect key="frame" x="240" y="6" width="120" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="6FC-Na-us2"/>
+                                            <constraint firstAttribute="height" constant="116" id="vtw-CA-N7C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Hint" backgroundImage="Button">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hintButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGI-Du-Nqy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-dm-Wuh" userLabel="Hint Button">
+                                        <rect key="frame" x="480" y="6" width="120" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Cr6-hv-gxS"/>
+                                            <constraint firstAttribute="height" constant="116" id="EAy-NH-Vl0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Quit" backgroundImage="Button">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="quitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ra-to-Zna"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-2c-C1w">
+                                        <rect key="frame" x="0.0" y="6" width="120" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Xku-Oj-Njz"/>
+                                            <constraint firstAttribute="height" constant="116" id="t2Y-Fd-vTW"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Shuffle" backgroundImage="Button">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shuffleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPX-mE-7sG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Fqt-3F-G88" firstAttribute="centerY" secondItem="3cD-hK-2s8" secondAttribute="centerY" id="1Du-0U-VhH"/>
+                                    <constraint firstAttribute="trailing" secondItem="J5X-dm-Wuh" secondAttribute="trailing" id="4jI-D9-MEa"/>
+                                    <constraint firstItem="9nC-2c-C1w" firstAttribute="leading" secondItem="3cD-hK-2s8" secondAttribute="leading" id="9Zj-sB-xg5"/>
+                                    <constraint firstItem="Fqt-3F-G88" firstAttribute="centerX" secondItem="3cD-hK-2s8" secondAttribute="centerX" id="G8T-QB-oo1"/>
+                                    <constraint firstAttribute="height" constant="128" id="RsT-uk-1eM"/>
+                                    <constraint firstItem="9nC-2c-C1w" firstAttribute="centerY" secondItem="3cD-hK-2s8" secondAttribute="centerY" id="bJZ-hh-1wc"/>
+                                    <constraint firstItem="J5X-dm-Wuh" firstAttribute="centerY" secondItem="3cD-hK-2s8" secondAttribute="centerY" id="ibN-PV-e9Y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="93J-bO-2Fy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="34K-FF-Izv"/>
                             <constraint firstItem="93J-bO-2Fy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7d9-D2-whW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3cD-hK-2s8" secondAttribute="bottom" id="8gZ-l9-0na"/>
                             <constraint firstItem="oa0-qq-V4l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DGL-7o-WPz"/>
-                            <constraint firstItem="XR2-lo-3lp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QN8-MC-GRt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oa0-qq-V4l" secondAttribute="trailing" constant="-20" id="W6i-Jp-ojr"/>
                             <constraint firstItem="uMg-VV-OEA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XTs-Dk-iqt"/>
                             <constraint firstItem="tNh-Jy-xLM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YAO-vM-kif"/>
                             <constraint firstItem="tNh-Jy-xLM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFL-nt-TEE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XR2-lo-3lp" secondAttribute="bottom" constant="10" id="ehT-Mg-dOV"/>
                             <constraint firstItem="oa0-qq-V4l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fge-kL-b5G"/>
                             <constraint firstItem="uMg-VV-OEA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="guk-Rc-Jmx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3cD-hK-2s8" secondAttribute="trailing" constant="-20" id="h9u-F2-o6e"/>
                             <constraint firstItem="93J-bO-2Fy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iPS-DT-dwA"/>
+                            <constraint firstItem="3cD-hK-2s8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jNW-5K-yTa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oa0-qq-V4l" secondAttribute="trailing" constant="-20" id="shs-SS-S1Y"/>
                             <constraint firstItem="93J-bO-2Fy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7p-CT-8J6"/>
                             <constraint firstItem="uMg-VV-OEA" firstAttribute="top" secondItem="tNh-Jy-xLM" secondAttribute="bottom" constant="100" id="u5j-ye-cKa"/>
